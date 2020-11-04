@@ -18,17 +18,18 @@ def prime (m):
     m=0
     m = int(input("enter number to  check"))
 
-    if m> 1 :
-           for N in range (2,m):
+    if m > 1:
+        for N in range(2, m):
 
-             if (m%N == 0):
+            if (m % N == 0):
+                print(m, "is not prime")
+                break
+        else:
+            print(m, "is prime")
 
-              print(m,"is not prime")
-           else:
 
-              print(m, "is prime")
-
-    else:print(m,"is not prime")
+    else:
+        print(m, "is prime")
 
 def palindrome (m) :
     m = input("enter word or numper to check palindrome")
