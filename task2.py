@@ -18,7 +18,7 @@ def prime (m):
     m=0
     m = int(input("enter number to  check"))
 
-    if m > 1:
+    if m >= 1:
         for N in range(2, m):
 
             if (m % N == 0):
@@ -29,7 +29,7 @@ def prime (m):
 
 
     else:
-        print(m, "is prime")
+        print(m, "is not prime")
 
 def palindrome (m) :
     m = input("enter word or numper to check palindrome")
